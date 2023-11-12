@@ -1,6 +1,8 @@
-from typing import Optional
+from typing import Optional, Union
 from pydantic import BaseModel
 from datetime import datetime 
+from app.schemas.categories_schema import Category
+from app.schemas.suburbs_schema import Suburb
 
 class Job(BaseModel):
     id: int 
@@ -10,6 +12,11 @@ class Job(BaseModel):
     price: int 
     description: str
     created_at: datetime 
-    updated_at: Optional[str] = None 
+    updated_at: Optional[datetime] = None 
     suburb_id: int 
     category_id: int
+
+class JobDTO(Job):
+    category: Category
+    suburb: Suburb
+
