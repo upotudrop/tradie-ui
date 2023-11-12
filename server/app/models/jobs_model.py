@@ -37,17 +37,13 @@ class Jobs(Base):
             category_id=self.category_id
         )
 
-
     @classmethod 
-    def select_all_jobs(cls, db:Session):
-        query = (
-            db.query(Jobs, Suburb, Categories)
-            .join(Suburb, Jobs.suburb_id == Suburb.id)
-            .join(Categories, Jobs.category_id == Categories.id)
-            .all()
-        )
+    def select_all_open_jobs(cls, db:Session):
+        return _select_all_jobs_by_status(cls, db, 'new')
 
-        return query
+    @classmethod
+    def select_all_accepted_jobs(cls, db:Session):
+        return _select_all_jobs_by_status(cls, db, 'accepted')
 
     @classmethod
     def update_job_status(cls, db: Session, id: int, status: str):
@@ -58,3 +54,14 @@ class Jobs(Base):
     @classmethod
     def does_job_exist(cls, db: Session, id: int): 
         return db.query(Jobs).filter(Jobs.id == id)
+
+def _select_all_jobs_by_status(db: Session, status: str): 
+    query = (
+            db.query(Jobs, Suburb, Categories)
+            .join(Suburb, Jobs.suburb_id == Suburb.id)
+            .join(Categories, Jobs.category_id == Categories.id)
+            .filter(Jobs.status == status)
+            .all()
+        )
+
+    return query
