@@ -1,4 +1,16 @@
 
+export type Suburb = {
+    id: number; 
+    name: string; 
+    postcode: string;
+}
+
+export type Category = {
+    id: number;
+    name: string;
+    parent_category_id: number
+}
+
 export type Job = {
     id: number;
     status: string;
@@ -8,6 +20,8 @@ export type Job = {
     description: string; 
     created_at: string;
     updated_at: string | null;
-    suburb_id: number;
-    category_id: number;
+    category: Category;
+    suburb: Suburb
 }
+
+export type JobOptionKeys = | 'Invited' | 'Accepted'

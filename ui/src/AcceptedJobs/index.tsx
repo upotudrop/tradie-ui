@@ -1,17 +1,15 @@
-import React from 'react';
-import { Job } from '../types';
-import { JobInvitation } from './JobInvitation';
-import './jobInvitationStyles.css'
+import { Job } from "../types"
+import { AcceptedJob } from "./AcceptedJob"
 
 interface Props {
     jobs: Job[]
 }
 
-export const JobInvitations:React.FC<Props> = ({ jobs }) => {
+export const AcceptedJobs:React.FC<Props> = ({ jobs }) => {
     if(jobs.length === 0) {
         return (
             <section>
-                No Jobs currently available
+               You have not accepted any jobs
             </section>
         )
     }
@@ -19,7 +17,7 @@ export const JobInvitations:React.FC<Props> = ({ jobs }) => {
     return (
        <section className='job-root-container'>
         {jobs.map((job) => (
-            <JobInvitation 
+            <AcceptedJob 
                 key={job.id} 
                 jobDetails={job}           
             />

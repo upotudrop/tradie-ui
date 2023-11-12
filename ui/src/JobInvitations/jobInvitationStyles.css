@@ -1,22 +1,16 @@
+.job-root-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
 
-.job-invitation-card-container {
-    width: 50%;
-    padding: 12px;
+.job-card-container {
     background-color: #FFFFFF;
-}
-
-.job-invitation-card-job-info-header {
-    display: flex;
-}
-
-.job-owner-name-icon {
-    border-radius: 50%;
-    background-color: #ee9f27;
-    width: 35px;
-    height: 35px;
-    color: #FFFFFF;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 8px;
 }
