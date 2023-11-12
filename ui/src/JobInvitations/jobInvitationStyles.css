@@ -1,0 +1,16 @@
+.job-root-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.job-card-container {
+    background-color: #FFFFFF;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 8px;
+}

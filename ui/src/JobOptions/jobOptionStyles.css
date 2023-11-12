@@ -1,0 +1,37 @@
+
+
+.job-options-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.default-option-tab {
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #e2e2e2;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.selected-option-tab {
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid #e2e2e2;
+    border-bottom: 4px solid #F08000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.selected-option-tab:hover {
+    border-bottom: 4px solid #FF7518 ;
+}

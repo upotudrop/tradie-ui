@@ -1,0 +1,90 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Barlow';
+}
+
+.primary-button {
+    width: max-content;
+    padding: 6px 12px 6px 12px;
+    background-color: #ff781f;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #CC5500;
+    font-size: 16px;
+    height: min-content;
+}
+
+.primary-button:hover {
+    background-color: #ff6600;
+}
+
+.secondary-button {
+    width: max-content;
+    padding: 6px 12px 6px 12px;
+    background-color: #e5e5e5;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #bfbfbf;
+    font-size: 16px;
+    height: min-content;
+}
+
+.secondary-button:hover {
+    background-color: #d8d8d8;
+}
+
+.job-invitation-card-job-info-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gray;
+}
+
+.job-owner-name-icon {
+    border-radius: 50%;
+    background-color: #ee9f27;
+    width: 35px;
+    height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.job-owner-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.job-suburb-info-container {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid gray;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.highlighted-contact-info {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ee9f27;
+    padding-top: 12px;
+    margin: 0;
+}
