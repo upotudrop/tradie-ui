@@ -1,6 +1,6 @@
 import { JobOptions } from '../index';
 import { render, act } from '@testing-library/react'
-import { ACCEPTED_JOB_OPTION, INVITED_JOB_OPTION } from '../constants';
+import { JOB_OPTION_ACCEPTED_KEY, JOB_OPTION_INVITED_KEY } from '../../../constants';
 
 describe('Job Options Testing suite', () => {
 
@@ -9,12 +9,12 @@ describe('Job Options Testing suite', () => {
         <JobOptions 
             children={<></>} 
             onChangeOption={jest.fn()}
-            optionKey={INVITED_JOB_OPTION} />
+            optionKey={JOB_OPTION_INVITED_KEY} />
             )
         )
 
-        expect(getByText(INVITED_JOB_OPTION)).toBeInTheDocument();
-        expect(getByText(ACCEPTED_JOB_OPTION)).toBeInTheDocument();
+        expect(getByText(JOB_OPTION_INVITED_KEY)).toBeInTheDocument();
+        expect(getByText(JOB_OPTION_ACCEPTED_KEY)).toBeInTheDocument();
         expect(container).toMatchSnapshot();
     })
  

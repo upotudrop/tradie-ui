@@ -23,9 +23,9 @@ exports[`Tradie UI Testing suite should be able to render tradie ui 1`] = `
         </p>
       </section>
     </section>
-    <section
-      class="job-root-container"
-    />
+    <section>
+      No Jobs currently available
+    </section>
   </section>
 </div>
 `;

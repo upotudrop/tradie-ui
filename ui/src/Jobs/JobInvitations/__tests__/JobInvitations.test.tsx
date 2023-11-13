@@ -1,4 +1,4 @@
-import axios from "axios";
+import { restfulClient } from "../../../API/setup/restClientProvider";
 import { render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import { JobInvitations } from "..";
@@ -8,7 +8,7 @@ import { API_BASE_URL } from "../../../API/setup/restClientProvider";
 
 describe('Job Invitations testing suite', () => {
     beforeEach(() => {
-        const mock = new MockAdapter(axios);
+        const mock = new MockAdapter(restfulClient);
         mock.onGet(`${API_BASE_URL}/api/open-jobs`).reply(200, tempJobs)
     })
     
@@ -18,7 +18,7 @@ describe('Job Invitations testing suite', () => {
     })
     
     it('should render `no jobs available` if response empty', async () => {
-        const mock = new MockAdapter(axios);
+        const mock = new MockAdapter(restfulClient);
         mock.onGet(`${API_BASE_URL}/api/open-jobs`).reply(200, [])
     
         const { queryByText } = await act(async () => render(<JobInvitations />))

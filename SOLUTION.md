@@ -43,4 +43,20 @@ such that it would be easier to refactor should the appropriate decisions arise.
 # CI-CD
 
 I added a very basic github/actions pipeline for the FE
+
+# Use of git-hub
+
+In order to speed development time up, I just used prs with master
+
+I ignored the normal
+
+- development
+- staging
+- production
+
+branches
+
+# Final thoughts
+
+It would have been good to go further, but unfortunately I'll be too busy this week to continue.
  
