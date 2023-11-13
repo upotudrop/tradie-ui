@@ -1,7 +1,7 @@
 from app.db.core import Base
 from sqlalchemy import VARCHAR, INTEGER, TEXT, TIMESTAMP, ForeignKey
 from sqlalchemy.sql.schema import Column
-from sqlalchemy.orm import Session, relationship
+from sqlalchemy.orm import Session
 from datetime import datetime
 from app.schemas.jobs_schema import Job
 from app.models.categories_model import Categories
@@ -39,11 +39,11 @@ class Jobs(Base):
 
     @classmethod 
     def select_all_open_jobs(cls, db:Session):
-        return _select_all_jobs_by_status(cls, db, 'new')
+        return _select_all_jobs_by_status(db, 'new')
 
     @classmethod
     def select_all_accepted_jobs(cls, db:Session):
-        return _select_all_jobs_by_status(cls, db, 'accepted')
+        return _select_all_jobs_by_status(db, 'accepted')
 
     @classmethod
     def update_job_status(cls, db: Session, id: int, status: str):

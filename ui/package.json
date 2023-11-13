@@ -45,6 +45,7 @@
   "devDependencies": {
     "@types/lodash": "^4.14.201",
     "axios-mock-adapter": "^1.22.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "jest-fetch-mock": "^3.0.3"
   }
 }

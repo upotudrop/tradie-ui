@@ -1,10 +1,9 @@
 import React from 'react';
-import { JobContactInfo } from '../commonComponents/JobUI/JobContactInfo';
-import { JobDescription } from '../commonComponents/JobUI/JobDescription';
-import { JobLocationInfo } from '../commonComponents/JobUI/JobLocationInfo';
-import { Button } from '../commonComponents/buttons/Button';
-import { Job } from '../types';
-import { AcceptedJobContactInfo } from '../commonComponents/JobUI/AcceptedJobContactInfo';
+import { JobContactInfo } from '../../commonComponents/JobUI/JobContactInfo';
+import { JobDescription } from '../../commonComponents/JobUI/JobDescription';
+import { JobLocationInfo } from '../../commonComponents/JobUI/JobLocationInfo';
+import { Job } from '../../types';
+import { AcceptedJobContactInfo } from '../../commonComponents/JobUI/AcceptedJobContactInfo';
 
 interface Props {
     jobDetails: Job
@@ -19,7 +18,6 @@ export const AcceptedJob:React.FC<Props> = ({
         suburb,
         description,
         id,
-        price,
         contact_email,
     } = jobDetails;
 

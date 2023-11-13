@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter, Depends, Body
+from fastapi import APIRouter, Depends, Body, HTTPException
 from sqlalchemy.orm import Session
 from app.db.core import get_db
 from app.schemas.jobs_schema import JobDTO
@@ -26,13 +26,10 @@ def update_job_status(
     db: Session = Depends(get_db),
     status: str = Body(None, description="the status that the job should be updated to")
     ):
-
     if any([
         status == 'accepted',
         status == 'declined'
     ]): 
         return jobs_controller.update_job_status(db, id, status)
 
-    return {
-        "Error:": "status must be either 'accepted' or 'declined'"
-    }
+    raise HTTPException(status_code=400, detail="status must be either 'accepted' or 'declined'")

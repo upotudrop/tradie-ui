@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Job Invitations testing suite should be able to render tradie ui 1`] = `
+<div>
+  <section>
+    No Jobs currently available
+  </section>
+</div>
+`;
