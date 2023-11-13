@@ -8,7 +8,7 @@ import { JobOptionKeys } from './types';
 import { OptionTab } from './JobOptions/components/OptionTab';
 import { AcceptedJobs } from './AcceptedJobs';
 
-const tempJobs = [
+export const tempJobs = [
   {
     "id": 1,
     "status": "accepted",
@@ -145,20 +145,20 @@ const tempJobs = [
 
 
 function App() {
-  const [jobs, setJobs] = useState(tempJobs);
+  const [jobs, setJobs] = useState([]);
   const [optionKey, setOptionKey] = useState<JobOptionKeys>(INVITED_JOB_OPTION);
 
   const onChangeOption = (key: JobOptionKeys) => {
       setOptionKey(key);
   }
 
-  // useEffect(() => {
-  //   axios.get('http://localhost:8000/api/jobs').then((response) => {
-  //     if(response.status === 200) {
-  //       setJobs(response.data)
-  //     }
-  //   })
-  // }, [])
+  useEffect(() => {
+    axios.get('http://localhost:8000/api/jobs').then((response) => {
+      if(response.status === 200) {
+        setJobs(response.data)
+      }
+    })
+  }, [])
 
   
   return (
