@@ -22,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: |
           cd ui
-          npm install
+          yarn install
       - name: Lint
         run: |
           cd ui
-          npm run eslint
+          yarn eslint
 
   build:
     runs-on: ubuntu-22.04
@@ -42,11 +42,11 @@ jobs:
       - name: Install dependencies
         run: |
           cd ui
-          npm install
+          yarn install
       - name: Build
         run: |
           cd ui
-          npm run build
+          yarn build
       - uses: actions/upload-artifact@v3
         with:
           name: dist
@@ -67,7 +67,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd ui
-          npm install
+          yarn install
       - uses: actions/download-artifact@v3
         with:
           name: dist
@@ -75,4 +75,4 @@ jobs:
       - name: Test
         run: |
           cd ui 
-          npm test
+          yarn test
