@@ -20,9 +20,13 @@ jobs:
           node-version: "16"
           cache-dependency-path: ui/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd ui
+          npm install
       - name: Lint
-        run: npm run eslint
+        run: |
+          cd ui
+          npm run eslint
 
   build:
     runs-on: ubuntu-22.04
@@ -36,9 +40,13 @@ jobs:
           node-version: "16"
           cache-dependency-path: ui/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd ui
+          npm install
       - name: Build
-        run: npm run build
+        run: |
+          cd ui
+          npm run build
       - uses: actions/upload-artifact@v3
         with:
           name: dist
@@ -57,10 +65,14 @@ jobs:
           node-version: "16"
           cache-dependency-path: ui/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd ui
+          npm install
       - uses: actions/download-artifact@v3
         with:
           name: dist
           path: dist
       - name: Test
-        run: npm test
+        run: |
+          cd ui 
+          npm test
