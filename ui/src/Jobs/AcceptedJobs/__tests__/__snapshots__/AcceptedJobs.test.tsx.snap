@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Job Invitations testing suite should be able to render tradie ui 1`] = `
+exports[`Accepted Jobs testing suite should be able to render tradie ui 1`] = `
 <div>
   <section
     class="job-root-container"
@@ -40,27 +40,18 @@ exports[`Job Invitations testing suite should be able to render tradie ui 1`] = 
           1
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          luke@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Integer aliquam pulvinar odio et convallis. Integer id tristique ex. Aenean scelerisque massa vel est sollicitudin vulputate. Suspendisse quis ex eu ligula elementum suscipit nec a est. Aliquam a gravida diam. Donec placerat magna posuere massa maximus vehicula. Cras nisl ipsum, fermentum nec odio in, ultricies dapibus risus. Vivamus neque.
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          20
         </p>
       </section>
     </section>
@@ -99,27 +90,18 @@ exports[`Job Invitations testing suite should be able to render tradie ui 1`] = 
           2
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          darth@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Praesent elit dui, blandit eget nisl sed, ornare pharetra urna. In cursus auctor tellus. Quisque ligula metus, viverra nec nibh ut, sagittis luctus tellus. Nulla egestas nibh ut diam vehicula, ut auctor lectus pharetra. Aliquam condimentum, erat eget vehicula eleifend, nulla risus consequat augue, quis convallis mi diam et dui.
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          30
         </p>
       </section>
     </section>
@@ -158,27 +140,18 @@ exports[`Job Invitations testing suite should be able to render tradie ui 1`] = 
           3
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          han@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Aliquam posuere est sit amet libero egestas tempus. Donec ut efficitur sapien. Sed molestie nec lacus malesuada suscipit. Aliquam suscipit nibh at posuere tempor. Etiam a sollicitudin felis. In et enim leo. Morbi vel imperdiet purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere auctor elit, id venenatis.
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          45
         </p>
       </section>
     </section>
@@ -217,6 +190,15 @@ exports[`Job Invitations testing suite should be able to render tradie ui 1`] = 
           4
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          kylo@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Proin semper consectetur mauris id commodo. In accumsan est ligula, id posuere libero placerat ac. Nunc non volutpat sem. Mauris gravida dictum eleifend. Praesent quis mattis arcu, rutrum sagittis diam. Nullam tempus sagittis diam, vel viverra nunc ultricies non. Sed at orci sem. Phasellus eget arcu hendrerit, congue metus ut, mollis tellus. Quisque gravida metus ut libero porta, sit amet rutrum odio porta. Fusce interdum est sed quam venenatis dictum. Integer ultrices est in odio semper dictum. Proin nec urna vel quam finibus maximus.
@@ -226,24 +208,6 @@ Sed accumsan urna vitae libero luctus volutpat. Nulla eu sodales enim, vitae bla
 Morbi rutrum felis lacinia eros tincidunt scelerisque. Morbi aliquam porttitor sapien. Phasellus eu odio ac neque faucibus suscipit in at lectus. Maecenas et blandit arcu. Nullam sed sem neque. Nulla sit amet tristique nisl. Ut et pretium velit. Fusce consequat tincidunt fringilla. Nunc gravida libero sit amet augue viverra, a imperdiet odio dictum. Sed iaculis, metus vel rutrum convallis, quam ex commodo nibh, eget ultrices nisi eros eu massa. Ut iaculis maximus ligula, sed efficitur mauris bibendum sagittis. Curabitur et dolor mi. Proin lorem urna, porttitor quis lacus pharetra, ornare porta nulla. Sed ultricies feugiat nibh, et semper tellus aliquet sit amet. Cras faucibus scelerisque nisi, at vestibulum massa pharetra et.
 
 
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          15
         </p>
       </section>
     </section>
@@ -282,27 +246,18 @@ Morbi rutrum felis lacinia eros tincidunt scelerisque. Morbi aliquam porttitor s
           5
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          lando@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Quisque blandit erat id mi tincidunt porta. Vivamus eleifend sagittis neque id maximus. Etiam molestie, massa ut tempus fermentum, augue nisi pulvinar nunc, id malesuada ipsum ipsum nec odio. Etiam et nisl facilisis, egestas massa eget, sagittis sapien. Curabitur eget consequat diam. Proin auctor rhoncus est, vitae imperdiet sem mollis.
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          62
         </p>
       </section>
     </section>
@@ -341,27 +296,18 @@ Morbi rutrum felis lacinia eros tincidunt scelerisque. Morbi aliquam porttitor s
           6
         </p>
       </section>
+      <section
+        class="flex-container"
+      >
+        <p
+          class="highlighted-contact-info"
+        >
+          jabba@mailinator.com
+        </p>
+      </section>
       <section>
         <p>
           Suspendisse consequat malesuada arcu id venenatis. Donec maximus, dolor quis elementum scelerisque, lorem diam ornare arcu, sed venenatis orci justo nec nibh. Maecenas sollicitudin pulvinar lorem, at aliquet tortor tincidunt at. Vestibulum blandit, arcu eu blandit vehicula, orci nulla porta justo, a semper nunc risus sit amet ante. Donec lobortis.
-        </p>
-      </section>
-      <section
-        class="button-group"
-      >
-        <button
-          class="primary-button"
-        >
-          Accept
-        </button>
-        <button
-          class="secondary-button"
-        >
-          Decline
-        </button>
-        <p>
-          $
-          55
         </p>
       </section>
     </section>
