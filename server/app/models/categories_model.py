@@ -1,9 +1,6 @@
 from app.db.core import Base
-from sqlalchemy import Boolean, VARCHAR, DateTime, INTEGER, TEXT, TIMESTAMP, ForeignKey
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import VARCHAR, INTEGER
 from sqlalchemy.sql.schema import Column
-from sqlalchemy.orm import Session, relationship
-from datetime import datetime
 from app.schemas.categories_schema import Category
 
 class Categories(Base):

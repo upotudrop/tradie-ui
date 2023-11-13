@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Job Options Testing suite should be able to render tradie ui 1`] = `
+<div>
+  <section
+    class="job-options-container"
+  >
+    <section
+      class="selected-option-tab"
+    >
+      <p>
+        Invited
+      </p>
+    </section>
+    <section
+      class="default-option-tab"
+    >
+      <p>
+        Accepted
+      </p>
+    </section>
+  </section>
+</div>
+`;

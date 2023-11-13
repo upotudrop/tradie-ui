@@ -7,7 +7,7 @@ from app.core.config import DATABASE_URL
 logger = logging.getLogger(__name__)
 
 engine = create_engine(str(DATABASE_URL))
-print("db", str(DATABASE_URL))
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()

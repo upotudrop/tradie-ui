@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional
 from pydantic import BaseModel
 from datetime import datetime 
 from app.schemas.categories_schema import Category
@@ -19,4 +19,3 @@ class Job(BaseModel):
 class JobDTO(Job):
     category: Category
     suburb: Suburb
-

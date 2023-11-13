@@ -25,3 +25,4 @@ export type Job = {
 }
 
 export type JobOptionKeys = | 'Invited' | 'Accepted'
+export type JobStatusKeys = | 'accepted' | 'declined';
